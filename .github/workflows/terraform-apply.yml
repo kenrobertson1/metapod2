@@ -25,4 +25,4 @@ jobs:
         run: terraform -chdir=tf-files init
 
       - name: Terraform Apply
-        run: terraform -chdir=tf-files apply -destroy
+        run: terraform -chdir=tf-files apply -destroy -auto-approve
